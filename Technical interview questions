@@ -1,0 +1,38 @@
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+Example:
+
+Given nums = [2, 7, 11, 15], target = 9,
+
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+
+solution:
+
+1.sort the array
+2.traverse from end f list and eliminate all numbers greater than target
+3.find diffvalue = target - list element and add to hash if hash empty(list elemnt index ,diffvallue)
+4. if hash not empty then check if new list element is found in hash table(if list ement present in values.hashtable) 
+then print list ement index and current list index as pair and quit
+
+Pgm:
+
+
+You are given two non-empty linked lists representing two non-negative integers. 
+The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+Example
+
+Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+Output: 7 -> 0 -> 8
+Explanation: 342 + 465 = 807.
+
+wrong solution:
+
+1.  write a function that will traverse to end of each list(next -s null) and find data and make previous element  as last element (prev next =null) and get data
+Do this till we reach head pointer and return final value
+3.Find both reversed values and then add it
+
+right solution:
