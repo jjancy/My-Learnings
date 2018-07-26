@@ -1,0 +1,8 @@
+http://serveraddress/qcbin
+Go to siteAdministration and give username/passwd
+goto create domain on left hand side->create insurance and somain number will beassigned to name
+goto siteusers ab to create new users and assign projects to each user
+http://serveraddress/qcbin goto ALM desktop client
+Testing/Lab resources and defects(developers)
+
+Download excel addIns : Go to http link/qcbin then go to Tools-> More HP ALM AddINs-> AddIns for Microsoft
