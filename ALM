@@ -6,3 +6,4 @@ http://serveraddress/qcbin goto ALM desktop client
 Testing/Lab resources and defects(developers)
 
 Download excel addIns : Go to http link/qcbin then go to Tools-> More HP ALM AddINs-> AddIns for Microsoft
+Importing requirements in EXCEL to ALM using the AddiNs->steps->login/mapping/validate/upload
