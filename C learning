@@ -1,0 +1,17 @@
+Enum - own datatype with specified values
+enum myColor {red,blue,Yellow};
+the compiler treats enum values a s 0,1,2 etc.
+enum direction {up,down,left=10,right);
+here up =0,down=1,left=10 and right=11
+
+Char: anything in single quotes from character to numbers .can be signed/unsigned
+char broiled = 'T' // this is char value
+char broiled = T// T is a variable -wrong
+char broiled ="T"// string - wrong
+Char broiled = 65//is alright -right will consider ascii equivlaent
+
+Escape sequences:
+\a - Alert,\b= backspace,\f - formfeed,\n- newline,etc...
+
+format specifiers:
+
