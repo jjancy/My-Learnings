@@ -1,0 +1,23 @@
+string name ="JanJo"
+Console.Writeline($"Hello {name} and {name.Length}");
+var date = DateTime.Now;
+Console.WriteLine("Hello, {0}! Today is {1}, it's {2:HH:mm} now.", name, date.DayOfWeek, date);
+You cannot have any white space between the $ and the " that starts a string literal. Doing so causes a compile-time error.
+Console.WriteLine($"|{"Left",-7}|{"Right",7}|");
+
+const int FieldWidthRightAligned = 20;
+Console.WriteLine($"{Math.PI,FieldWidthRightAligned} - default formatting of the pi number");
+Console.WriteLine($"{Math.PI,FieldWidthRightAligned:F3} - display only three decimal digits of the pi number");
+// Expected output is:
+// |Left   |  Right|
+//     3.14159265358979 - default formatting of the pi number
+//                3.142 - display only three decimal digits of the pi number    
+
+:- special interpolation operator
+string name = "Horace";
+int age = 34;
+Console.WriteLine($"He asked, \"Is your name {name}?\", but didn't wait for a reply :-{{");
+Console.WriteLine($"{name} is {age} year{(age == 1 ? "" : "s")} old.");
+// Expected output is:
+// He asked, "Is your name Horace?", but didn't wait for a reply :-{
+// Horace is 34 years old.
